@@ -1,0 +1,25 @@
+$yellow: #ffcc00;
+$blue: #0e376b;
+$white: #ffffff;
+$black: #333333;
+$light-blue: #69abff;
+$nokia-blue: #124191;
+
+// MenuColors
+
+$menu-font: #4d6f99;
+$menu-hl: #dbe0e6;
+$menu-font-hl: #0d3363;
+$level1-background: #e7ecf3;
+$level2-backgorund: #eef3fa;
+$level1-border: $menu-font;
+$level2-border: #c14746;
+$level3-border: $menu-font-hl;
+
+// Support (Dev)
+
+.yel {background:$yellow};
+.blu {background:$blue};
+.wht {background:$white};
+.blk {background:$black};
+.lbl {background:$light-blue};

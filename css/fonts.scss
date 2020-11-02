@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'nokia_pure_headlineregular';
+  src: url("../fonts/nokiapureheadline_regular-webfont.woff2") format("woff2"), url("../fonts/nokiapureheadline_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'nokia_pure_headlinelight';
+  src: url("../fonts/nokiapureheadline_light-webfont.woff2") format("woff2"), url("../fonts/nokiapureheadline_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'nokia_pure_headlineultraLt';
+  src: url("../fonts/nokiapureheadline_ultralight-webfont.woff2") format("woff2"), url("../fonts/nokiapureheadline_ultralight-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'lemonmilk-bold';
+	src: url("../fonts/lemonmilk-bold-webfont.woff2") format("woff2"), url("../fonts/lemonmilk-bold-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+$nregular: 'nokia_pure_headlineregular';
+$nlight: 'nokia_pure_headlinelight';
+$nultra: 'nokia_pure_headlineultraLt';
+$lemon: 'lemonmilk-bold';
