@@ -113,17 +113,23 @@ body {
           border-radius: 5px;
           margin-left: 1em;
           -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); }
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+          -webkit-transition: 0.3s ease all;
+          transition: 0.3s ease all; }
+          .zl-header .zl-navbar .zl-navmenu .zl-navlink.go-button:hover, .zl-header .zl-navbar .zl-navmenu .zl-navlink.go-button:active {
+            background: #69abff;
+            text-decoration: none; }
         .zl-header .zl-navbar .zl-navmenu .zl-navlink .zl-navitem {
           font-size: 0.9em;
           margin-bottom: -2px; }
   .zl-header .zl-quote {
     text-align: center;
-    font-family: "nokia_pure_headlineultraLt"; }
+    font-family: "nokia_pure_headlineultraLt";
+    margin-top: 4em; }
     .zl-header .zl-quote h1 {
-      font-size: 4vw; }
+      font-size: 2.5rem; }
     .zl-header .zl-quote h6 {
-      font-size: 1.4vw;
+      font-size: 1rem;
       font-style: italic; }
   .zl-header .zl-compliance .zl-separator {
     display: block;
@@ -339,7 +345,12 @@ body {
         background: #69abff;
         border-radius: 3px;
         border: none;
-        padding: 4px 1em; }
+        padding: 4px 1em;
+        -webkit-transition: 0.3s ease all;
+        transition: 0.3s ease all; }
+        .zl-footer .zl-cols .zl-f-col4 form .zl-input-button:hover, .zl-footer .zl-cols .zl-f-col4 form .zl-input-buttonactive {
+          background: #ffcc00;
+          text-decoration: none; }
   .zl-footer .zl-bottom {
     margin: 0 3rem;
     border-top: 1pt solid rgba(255, 255, 255, 0.5);
@@ -364,10 +375,142 @@ body {
         display: inline-block;
         margin: 0 8px;
         border-radius: 50%;
-        text-align: center; }
+        text-align: center;
+        -webkit-transition: 0.3s ease all;
+        transition: 0.3s ease all; }
         .zl-footer .zl-bottom .zl-social a i {
           display: block;
           font-size: 22px;
           margin: 4px; }
+        .zl-footer .zl-bottom .zl-social a:hover, .zl-footer .zl-bottom .zl-social aactive {
+          background: #ffcc00;
+          text-decoration: none; }
+
+@media screen and (max-width: 575px) {
+  .zl-header {
+    height: 82vw; }
+    .zl-header .zl-main .zl-slideshow .zl-slide .zl-main-img {
+      width: 150%;
+      -webkit-transform: translateX(-25%);
+              transform: translateX(-25%); }
+    .zl-header .zl-navbar .zl-logo {
+      width: 9em;
+      margin-top: -2px; }
+    .zl-header .zl-navbar .zl-navmenu .zl-navlink {
+      display: none; }
+      .zl-header .zl-navbar .zl-navmenu .zl-navlink.go-button {
+        display: initial; }
+        .zl-header .zl-navbar .zl-navmenu .zl-navlink.go-button i {
+          margin-right: -6px; }
+        .zl-header .zl-navbar .zl-navmenu .zl-navlink.go-button span {
+          display: none; }
+    .zl-header .zl-quote {
+      margin-top: 2em; }
+      .zl-header .zl-quote h1 {
+        font-size: 1.2rem; }
+      .zl-header .zl-quote h6 {
+        font-size: 0.7rem; }
+    .zl-header .zl-compliance .zl-comp-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .zl-header .zl-compliance .zl-comp-items li {
+        width: 100%;
+        font-size: 0.85em;
+        margin-bottom: 0.85em; }
+    .zl-header .zl-header-copyright figure {
+      width: 5.5em; }
+
+  .zl-description h2 {
+    margin: 1.5em 0 0; }
+  .zl-description #paragraph {
+    margin: 2rem; }
+
+  .zl-sandf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 4em 0 0 0;
+    padding: 2rem 2rem 4rem; }
+    .zl-sandf .zl-features {
+      margin-top: 1rem; }
+      .zl-sandf .zl-features div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+
+  .zl-footer .zl-cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .zl-footer .zl-cols div {
+      width: 100%;
+      margin-bottom: 2em; }
+    .zl-footer .zl-cols .zl-f-col1 {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .zl-footer .zl-cols .zl-f-col1 p {
+        margin: 0.5em 0 0; }
+        .zl-footer .zl-cols .zl-f-col1 p br {
+          display: none; }
+    .zl-footer .zl-cols .zl-f-col2 span {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+    .zl-footer .zl-cols .zl-f-col3 {
+      display: none; }
+    .zl-footer .zl-cols .zl-f-col4 {
+      margin-bottom: 0; }
+      .zl-footer .zl-cols .zl-f-col4 .zl-contact {
+        margin-bottom: 0; }
+        .zl-footer .zl-cols .zl-f-col4 .zl-contact form #inputmail {
+          margin-bottom: 0; }
+          .zl-footer .zl-cols .zl-f-col4 .zl-contact form #inputmail::before {
+            bottom: 1em; }
+        .zl-footer .zl-cols .zl-f-col4 .zl-contact form .zl-input-email {
+          padding: 8px 0.25em 8px 2em; }
+  .zl-footer .zl-bottom {
+    margin: 0 1.5rem; } }
+@media screen and (max-width: 991px) {
+  .zl-header .zl-navbar {
+    font-size: 0.85em; }
+  .zl-header .zl-quote h1 {
+    font-size: 1.6rem; }
+  .zl-header .zl-compliance .zl-comp-items li span {
+    font-size: 0.8em; }
+  .zl-header .zl-header-copyright figure {
+    width: 5em; }
+
+  .zl-sandf .zl-features div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+@media screen and (min-width: 1366px) {
+  .zl-header .zl-compliance .zl-comp-items li span {
+    font-size: 1.1em; }
+
+  .zl-middle-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .zl-description .backtop {
+    display: none; }
+
+  .zl-sandf {
+    margin: 0; }
+    .zl-sandf .zl-features div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 /*# sourceMappingURL=zina_landing.css.map */
